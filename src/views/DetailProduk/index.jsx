@@ -360,6 +360,7 @@ function DetailProduk() {
               flexDirection: 'row',
               height: 550,
               mt: 4,
+              // bgcolor: 'red',
               [theme.breakpoints.down('md')]: {
                 display: 'flex',
                 flexDirection: 'row',
@@ -369,763 +370,477 @@ function DetailProduk() {
               },
             }}
           >
-            <Box
-              sx={{
-                width: '10%',
-                mr: 3,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                [theme.breakpoints.down('md')]: {
-                  width: '15%',
-                  mr: 3,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
-                },
-              }}
-            >
-              <Box
-                sx={{
-                  height: '23%',
-                  borderRadius: 1,
-                  bgcolor: 'white',
-                  border: 1,
-                  borderColor: 'orange',
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  image="/assets/images/image 8.png"
-                  sx={{
-                    height: '100%',
-                    border: 1,
-                    borderColor: 'orange',
-                    borderRadius: 1,
-                  }}
-                />
-              </Box>
-              <Box
-                sx={{
-                  height: '23%',
-                  borderRadius: 1,
-                  bgcolor: 'white',
-                  border: 1,
-                  borderColor: 'orange',
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  image="/assets/images/image 8.png"
-                  sx={{
-                    height: '100%',
-                    border: 1,
-                    borderColor: 'orange',
-                    borderRadius: 1,
-                  }}
-                />
-              </Box>
-              <Box
-                sx={{
-                  height: '23%',
-                  borderRadius: 1,
-                  bgcolor: 'white',
-                  border: 1,
-                  borderColor: 'orange',
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  image="/assets/images/image 8.png"
-                  sx={{
-                    height: '100%',
-                    border: 1,
-                    borderColor: 'orange',
-                    borderRadius: 1,
-                  }}
-                />
-              </Box>
-              <Box
-                sx={{
-                  height: '23%',
-                  borderRadius: 1,
-                  bgcolor: 'white',
-                  border: 1,
-                  borderColor: 'orange',
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  image="/assets/images/image 8.png"
-                  sx={{
-                    height: '100%',
-                    border: 1,
-                    borderColor: 'orange',
-                    borderRadius: 1,
-                  }}
-                />
-              </Box>
-            </Box>
-
-            <Box
-              sx={{
-                width: '45%',
-                mr: 5,
-                [theme.breakpoints.down('md')]: {
-                  width: '75%',
-                  mr: 5,
-                },
-              }}
-            >
-              <CardMedia
-                component="img"
-                image="/assets/images/image 8.png"
-                sx={{
-                  height: '95%',
-                  border: 1,
-                  borderColor: 'orange',
-                  borderRadius: 1,
-                }}
-              />
-            </Box>
-
-            <Hilang>
-              <Box sx={{ width: '100%' }}>
+            <Grid container spacing={5}>
+              <Grid item xs={12} md={6}>
                 <Box
                   sx={{
-                    height: '30%',
-                    borderBottom: 1,
-                    borderBottomColor: 'lightgrey',
+                    display: 'flex',
+                    flexDirection: 'row',
+                    // bgcolor: 'red',
+                    height: '100%',
+                    // width: '50%',
                   }}
                 >
+                  {/* <Here> */}
                   <Box
                     sx={{
+                      width: '20%',
+                      mr: 3,
                       display: 'flex',
-                      flexDirection: 'row',
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontSize: 17,
-                      }}
-                    >
-                      Kode Produk
-                    </Typography>
-                    <Typography sx={{ fontSize: 17, mx: 1 }}>:</Typography>
-                    <Typography
-                      sx={{
-                        fontSize: 17,
-                        fontWeight: 'bold',
-                      }}
-                    >
-                      3393
-                    </Typography>
-                  </Box>
-                  <Typography sx={{ fontSize: 30, fontWeight: 'bold', my: 3 }}>
-                    Ummi 11 - Gamis Zenitha
-                  </Typography>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'row',
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontSize: 15,
-                      }}
-                    >
-                      Stok Tersedia
-                    </Typography>
-                    <Typography sx={{ fontSize: 15, mr: 1 }}>:</Typography>
-                    <Typography
-                      sx={{
-                        fontSize: 15,
-                        fontWeight: 'bold',
-                      }}
-                    >
-                      3
-                    </Typography>
-                  </Box>
-                </Box>
-                <Box
-                  sx={{
-                    height: '20%',
-                    borderBottom: 1,
-                    borderBottomColor: 'lightgrey',
-                  }}
-                >
-                  <Typography sx={{ fontSize: 17, my: 3, color: 'gray' }}>
-                    Harga:
-                  </Typography>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'row',
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontSize: 20,
-                        color: 'red',
-                        fontWeight: 'bold',
-                        mr: 1,
-                      }}
-                    >
-                      Rp112.980
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontSize: 20,
-                        color: 'gray',
-                        fontWeight: 'bold',
-                        textDecoration: 'line-through',
-                      }}
-                    >
-                      Rp188.300
-                    </Typography>
-                  </Box>
-                  <IconButton sx={{ mt: -10, ml: 60 }}>
-                    <ShareIcon />
-                  </IconButton>
-                </Box>
-
-                <Box sx={{ height: '50%' }}>
-                  <Box
-                    sx={{
-                      height: '33%',
-                      display: 'flex',
-                      flexDirection: 'row',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      // bgcolor: 'blue',
+                      [theme.breakpoints.down('md')]: {
+                        width: '15%',
+                        mr: 3,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                      },
                     }}
                   >
                     <Box
                       sx={{
-                        width: '50%',
-                        mt: 1,
+                        height: '23%',
+                        borderRadius: 1,
+                        bgcolor: 'white',
+                        border: 1,
+                        borderColor: 'orange',
                       }}
                     >
-                      <Typography>Quantity</Typography>
-                      <Box
+                      <CardMedia
+                        component="img"
+                        image="/assets/images/image 8.png"
                         sx={{
-                          width: 200,
-                          height: 50,
+                          height: '100%',
                           border: 1,
                           borderColor: 'orange',
                           borderRadius: 1,
-                          display: 'flex',
-                          flexDirection: 'row',
-                          [theme.breakpoints.down('md')]: {
-                            width: 180,
+                        }}
+                      />
+                    </Box>
+                    <Box
+                      sx={{
+                        height: '23%',
+                        borderRadius: 1,
+                        bgcolor: 'white',
+                        border: 1,
+                        borderColor: 'orange',
+                      }}
+                    >
+                      <CardMedia
+                        component="img"
+                        image="/assets/images/image 8.png"
+                        sx={{
+                          height: '100%',
+                          border: 1,
+                          borderColor: 'orange',
+                          borderRadius: 1,
+                        }}
+                      />
+                    </Box>
+                    <Box
+                      sx={{
+                        height: '23%',
+                        borderRadius: 1,
+                        bgcolor: 'white',
+                        border: 1,
+                        borderColor: 'orange',
+                      }}
+                    >
+                      <CardMedia
+                        component="img"
+                        image="/assets/images/image 8.png"
+                        sx={{
+                          height: '100%',
+                          border: 1,
+                          borderColor: 'orange',
+                          borderRadius: 1,
+                        }}
+                      />
+                    </Box>
+                    <Box
+                      sx={{
+                        height: '23%',
+                        borderRadius: 1,
+                        bgcolor: 'white',
+                        border: 1,
+                        borderColor: 'orange',
+                      }}
+                    >
+                      <CardMedia
+                        component="img"
+                        image="/assets/images/image 8.png"
+                        sx={{
+                          height: '100%',
+                          border: 1,
+                          borderColor: 'orange',
+                          borderRadius: 1,
+                        }}
+                      />
+                    </Box>
+                  </Box>
+
+                  <Box
+                    sx={{
+                      width: '100%',
+                      // mr: 5,
+                      [theme.breakpoints.down('md')]: {
+                        width: '75%',
+                        // mr: 5,
+                      },
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      image="/assets/images/image 8.png"
+                      sx={{
+                        height: '95%',
+                        border: 1,
+                        borderColor: 'orange',
+                        borderRadius: 1,
+                      }}
+                    />
+                  </Box>
+                  {/* <Here> */}
+                </Box>
+              </Grid>
+
+              <Grid item xs={12} md={6}>
+                <Box sx={{ width: '100%' }}>
+                  <Box
+                    sx={{
+                      height: '30%',
+                      borderBottom: 1,
+                      borderBottomColor: 'lightgrey',
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <Typography
+                        sx={{
+                          fontSize: 17,
+                        }}
+                      >
+                        Kode Produk
+                      </Typography>
+                      <Typography sx={{ fontSize: 17, mx: 1 }}>:</Typography>
+                      <Typography
+                        sx={{
+                          fontSize: 17,
+                          fontWeight: 'bold',
+                        }}
+                      >
+                        3393
+                      </Typography>
+                    </Box>
+                    <Typography
+                      sx={{ fontSize: 30, fontWeight: 'bold', my: 3 }}
+                    >
+                      Ummi 11 - Gamis Zenitha
+                    </Typography>
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <Typography
+                        sx={{
+                          fontSize: 15,
+                        }}
+                      >
+                        Stok Tersedia
+                      </Typography>
+                      <Typography sx={{ fontSize: 15, mr: 1 }}>:</Typography>
+                      <Typography
+                        sx={{
+                          fontSize: 15,
+                          fontWeight: 'bold',
+                        }}
+                      >
+                        3
+                      </Typography>
+                    </Box>
+                  </Box>
+                  <Box
+                    sx={{
+                      height: '20%',
+                      borderBottom: 1,
+                      borderBottomColor: 'lightgrey',
+                    }}
+                  >
+                    <Typography sx={{ fontSize: 17, my: 3, color: 'gray' }}>
+                      Harga:
+                    </Typography>
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <Typography
+                        sx={{
+                          fontSize: 20,
+                          color: 'red',
+                          fontWeight: 'bold',
+                          mr: 1,
+                        }}
+                      >
+                        Rp112.980
+                      </Typography>
+                      <Typography
+                        sx={{
+                          fontSize: 20,
+                          color: 'gray',
+                          fontWeight: 'bold',
+                          textDecoration: 'line-through',
+                        }}
+                      >
+                        Rp188.300
+                      </Typography>
+                    </Box>
+                    <IconButton sx={{ mt: -10, ml: 60 }}>
+                      <ShareIcon />
+                    </IconButton>
+                  </Box>
+
+                  <Box sx={{ height: '50%' }}>
+                    <Box
+                      sx={{
+                        height: '33%',
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <Box
+                        sx={{
+                          width: '50%',
+                          mt: 1,
+                        }}
+                      >
+                        <Typography>Quantity</Typography>
+                        <Box
+                          sx={{
+                            width: 200,
                             height: 50,
                             border: 1,
                             borderColor: 'orange',
                             borderRadius: 1,
                             display: 'flex',
                             flexDirection: 'row',
-                          },
-                        }}
-                      >
-                        <Box
-                          sx={{
-                            width: '33.5%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
+                            [theme.breakpoints.down('md')]: {
+                              width: 180,
+                              height: 50,
+                              border: 1,
+                              borderColor: 'orange',
+                              borderRadius: 1,
+                              display: 'flex',
+                              flexDirection: 'row',
+                            },
                           }}
                         >
-                          <IconButton>
-                            <MinIcon
-                              sx={{
-                                fontSize: 40,
-                                color: 'orange',
-                                [theme.breakpoints.down('md')]: {
-                                  fontSize: 28,
-                                  color: 'orange',
-                                },
-                              }}
-                            />
-                          </IconButton>
-                        </Box>
-                        <Box
-                          sx={{
-                            width: '33%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            bgcolor: 'orange',
-                          }}
-                        >
-                          <Typography
+                          <Box
                             sx={{
-                              fontSize: 30,
-                              color: 'white',
-                              fontWeight: 'bold',
-                              [theme.breakpoints.down('md')]: {
-                                fontSize: 18,
-                                color: 'white',
-                                fontWeight: 'bold',
-                              },
+                              width: '33.5%',
+                              display: 'flex',
+                              justifyContent: 'center',
+                              alignItems: 'center',
                             }}
                           >
-                            1
-                          </Typography>
-                        </Box>
-                        <Box
-                          sx={{
-                            width: '33.5%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                          }}
-                        >
-                          <IconButton>
-                            <PlusIcon
-                              sx={{
-                                fontSize: 40,
-                                color: 'orange',
-                                [theme.breakpoints.down('md')]: {
-                                  fontSize: 28,
+                            <IconButton>
+                              <MinIcon
+                                sx={{
+                                  fontSize: 40,
                                   color: 'orange',
+                                  [theme.breakpoints.down('md')]: {
+                                    fontSize: 28,
+                                    color: 'orange',
+                                  },
+                                }}
+                              />
+                            </IconButton>
+                          </Box>
+                          <Box
+                            sx={{
+                              width: '33%',
+                              display: 'flex',
+                              justifyContent: 'center',
+                              alignItems: 'center',
+                              bgcolor: 'orange',
+                            }}
+                          >
+                            <Typography
+                              sx={{
+                                fontSize: 30,
+                                color: 'white',
+                                fontWeight: 'bold',
+                                [theme.breakpoints.down('md')]: {
+                                  fontSize: 18,
+                                  color: 'white',
+                                  fontWeight: 'bold',
                                 },
                               }}
-                            />
-                          </IconButton>
+                            >
+                              1
+                            </Typography>
+                          </Box>
+                          <Box
+                            sx={{
+                              width: '33.5%',
+                              display: 'flex',
+                              justifyContent: 'center',
+                              alignItems: 'center',
+                            }}
+                          >
+                            <IconButton>
+                              <PlusIcon
+                                sx={{
+                                  fontSize: 40,
+                                  color: 'orange',
+                                  [theme.breakpoints.down('md')]: {
+                                    fontSize: 28,
+                                    color: 'orange',
+                                  },
+                                }}
+                              />
+                            </IconButton>
+                          </Box>
+                        </Box>
+                      </Box>
+
+                      <Box sx={{ width: '50%', mt: 1 }}>
+                        <Typography>Warna</Typography>
+                        <Box>
+                          <FormControl fullWidth>
+                            <InputLabel id="demo-simple-select-label"></InputLabel>
+                            <Select
+                              labelId="demo-simple-select-label"
+                              id="demo-simple-select"
+                              value={warna}
+                              label="Warna"
+                              onChange={handleChange}
+                            >
+                              <MenuItem value={'abuabu'}>Abu-Abu</MenuItem>
+                              <MenuItem value={'gold'}>Gold</MenuItem>
+                            </Select>
+                          </FormControl>
                         </Box>
                       </Box>
                     </Box>
 
-                    <Box sx={{ width: '50%', mt: 1 }}>
-                      <Typography>Warna</Typography>
-                      <Box>
-                        <FormControl fullWidth>
-                          <InputLabel id="demo-simple-select-label"></InputLabel>
-                          <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={warna}
-                            label="Warna"
-                            onChange={handleChange}
-                          >
-                            <MenuItem value={'abuabu'}>Abu-Abu</MenuItem>
-                            <MenuItem value={'gold'}>Gold</MenuItem>
-                          </Select>
-                        </FormControl>
+                    <Box sx={{ height: '33%' }}>
+                      <Typography>Ukuran</Typography>
+                      <Box
+                        sx={{
+                          height: 50,
+                          width: '80%',
+                          display: 'flex',
+                          flexDirection: 'row',
+                          justifyContent: 'space-between',
+                        }}
+                      >
+                        <Button
+                          sx={{ width: 25, border: 1, borderColor: 'orange' }}
+                        >
+                          <Typography sx={{ color: 'orange' }}>S</Typography>
+                        </Button>
+                        <Button
+                          sx={{ width: 25, border: 1, borderColor: 'orange' }}
+                        >
+                          <Typography sx={{ color: 'orange' }}>M</Typography>
+                        </Button>
+                        <Button
+                          sx={{ width: 25, border: 1, borderColor: 'orange' }}
+                        >
+                          <Typography sx={{ color: 'orange' }}>L</Typography>
+                        </Button>
+                        <Button
+                          sx={{ width: 25, border: 1, borderColor: 'orange' }}
+                        >
+                          <Typography sx={{ color: 'orange' }}>2L</Typography>
+                        </Button>
+                        <Button
+                          sx={{ width: 25, border: 1, borderColor: 'orange' }}
+                        >
+                          <Typography sx={{ color: 'orange' }}>3L</Typography>
+                        </Button>
+                        <Button
+                          sx={{ width: 25, border: 1, borderColor: 'orange' }}
+                        >
+                          <Typography sx={{ color: 'orange' }}>XL</Typography>
+                        </Button>
                       </Box>
                     </Box>
-                  </Box>
 
-                  <Box sx={{ height: '33%' }}>
-                    <Typography>Ukuran</Typography>
                     <Box
                       sx={{
-                        height: 50,
-                        width: '80%',
+                        height: '33%',
                         display: 'flex',
                         flexDirection: 'row',
                         justifyContent: 'space-between',
+                        mt: 2,
                       }}
                     >
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>S</Typography>
-                      </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>M</Typography>
-                      </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>L</Typography>
-                      </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>2L</Typography>
-                      </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>3L</Typography>
-                      </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>XL</Typography>
-                      </Button>
-                    </Box>
-                  </Box>
-
-                  <Box
-                    sx={{
-                      height: '33%',
-                      display: 'flex',
-                      flexDirection: 'row',
-                      justifyContent: 'space-between',
-                      mt: 2,
-                    }}
-                  >
-                    <Link to="/cart-page" style={{ textDecoration: 'none' }}>
-                      <Button
-                        variant="outlined"
-                        sx={{
-                          backgroundColor: 'orange',
-                          color: 'white',
-                          fontWeight: 'bold',
-                          borderColor: 'orange',
-                          height: 50,
-                          textTransform: 'capitalize',
-                          [theme.breakpoints.down('md')]: {
+                      <Link to="/cart-page" style={{ textDecoration: 'none' }}>
+                        <Button
+                          variant="outlined"
+                          sx={{
                             backgroundColor: 'orange',
                             color: 'white',
                             fontWeight: 'bold',
                             borderColor: 'orange',
-                            width: 180,
                             height: 50,
                             textTransform: 'capitalize',
-                          },
-                        }}
-                      >
-                        <CartIcon />
-                        <Typography
-                          sx={{
-                            ml: 1,
-                            fontWeight: 'bold',
                             [theme.breakpoints.down('md')]: {
-                              ml: 1,
+                              backgroundColor: 'orange',
+                              color: 'white',
                               fontWeight: 'bold',
-                              fontSize: 12,
+                              borderColor: 'orange',
+                              width: 180,
+                              height: 50,
+                              textTransform: 'capitalize',
                             },
                           }}
                         >
-                          Tambah Keranjang
-                        </Typography>
-                      </Button>
-                    </Link>
-                    <Button
-                      sx={{
-                        height: 50,
-                        border: 1,
-                        borderColor: 'orange',
-                        width: 50,
-                        borderRadius: 1,
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                      }}
-                    >
-                      <Checkbox
-                        {...label}
-                        icon={<FavIcon sx={{ color: 'gray' }} />}
-                        checkedIcon={<FavIconFill sx={{ color: 'red' }} />}
-                      />
-                    </Button>
-                    <Button
-                      variant="outlined"
-                      sx={{
-                        backgroundColor: 'orange',
-                        color: 'white',
-                        fontWeight: 'bold',
-                        borderColor: 'orange',
-                        height: 50,
-                        width: 150,
-                        textTransform: 'capitalize',
-                      }}
-                    >
-                      Beli
-                    </Button>
-                  </Box>
-                </Box>
-              </Box>
-            </Hilang>
-          </Box>
-
-          <Muncul>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                height: 550,
-                mt: 4,
-                [theme.breakpoints.down('md')]: {
-                  display: 'flex',
-                  flexDirection: 'row',
-                  height: 550,
-                  width: 900,
-                  mt: 2,
-                },
-              }}
-            >
-              <Box sx={{ width: 900 }}>
-                <Box
-                  sx={{
-                    height: '30%',
-                    borderBottom: 1,
-                    borderBottomColor: 'lightgrey',
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'row',
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontSize: 23,
-                      }}
-                    >
-                      Kode Produk
-                    </Typography>
-                    <Typography sx={{ fontSize: 23, mx: 1 }}>:</Typography>
-                    <Typography
-                      sx={{
-                        fontSize: 23,
-                        fontWeight: 'bold',
-                      }}
-                    >
-                      3393
-                    </Typography>
-                  </Box>
-                  <Typography sx={{ fontSize: 36, fontWeight: 'bold', my: 3 }}>
-                    Ummi 11 - Gamis Zenitha
-                  </Typography>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'row',
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontSize: 21,
-                      }}
-                    >
-                      Stok Tersedia
-                    </Typography>
-                    <Typography sx={{ fontSize: 21, mr: 1 }}>:</Typography>
-                    <Typography
-                      sx={{
-                        fontSize: 21,
-                        fontWeight: 'bold',
-                      }}
-                    >
-                      3
-                    </Typography>
-                  </Box>
-                </Box>
-                <Box
-                  sx={{
-                    height: '20%',
-                    borderBottom: 1,
-                    borderBottomColor: 'lightgrey',
-                  }}
-                >
-                  <Typography sx={{ fontSize: 23, my: 3, color: 'gray' }}>
-                    Harga:
-                  </Typography>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'row',
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontSize: 26,
-                        color: 'red',
-                        fontWeight: 'bold',
-                        mr: 5,
-                      }}
-                    >
-                      Rp112.980
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontSize: 26,
-                        color: 'gray',
-                        fontWeight: 'bold',
-                        textDecoration: 'line-through',
-                      }}
-                    >
-                      Rp188.300
-                    </Typography>
-                  </Box>
-                  <IconButton sx={{ mt: -10, ml: 60 }}>
-                    <ShareIcon sx={{ fontSize: 35 }} />
-                  </IconButton>
-                </Box>
-
-                <Box sx={{ height: '50%' }}>
-                  <Box
-                    sx={{
-                      height: '33%',
-                      display: 'flex',
-                      flexDirection: 'row',
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        width: '50%',
-                        mt: 1,
-                      }}
-                    >
-                      <Typography>Quantity</Typography>
-                      <Box
-                        sx={{
-                          width: '80%',
-                          height: 50,
-                          border: 1,
-                          borderColor: 'orange',
-                          borderRadius: 1,
-                          display: 'flex',
-                          flexDirection: 'row',
-                        }}
-                      >
-                        <Box
-                          sx={{
-                            width: '33.5%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                          }}
-                        >
-                          <IconButton>
-                            <MinIcon
-                              sx={{
-                                fontSize: 40,
-                                color: 'orange',
-                                [theme.breakpoints.down('md')]: {
-                                  fontSize: 28,
-                                  color: 'orange',
-                                },
-                              }}
-                            />
-                          </IconButton>
-                        </Box>
-                        <Box
-                          sx={{
-                            width: '33%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            bgcolor: 'orange',
-                          }}
-                        >
+                          <CartIcon />
                           <Typography
                             sx={{
-                              fontSize: 30,
-                              color: 'white',
+                              ml: 1,
                               fontWeight: 'bold',
                               [theme.breakpoints.down('md')]: {
-                                fontSize: 18,
-                                color: 'white',
+                                ml: 1,
                                 fontWeight: 'bold',
+                                fontSize: 12,
                               },
                             }}
                           >
-                            1
+                            Tambah Keranjang
                           </Typography>
-                        </Box>
-                        <Box
-                          sx={{
-                            width: '33.5%',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                          }}
-                        >
-                          <IconButton>
-                            <PlusIcon
-                              sx={{
-                                fontSize: 40,
-                                color: 'orange',
-                                [theme.breakpoints.down('md')]: {
-                                  fontSize: 28,
-                                  color: 'orange',
-                                },
-                              }}
-                            />
-                          </IconButton>
-                        </Box>
-                      </Box>
-                    </Box>
-
-                    <Box sx={{ width: '50%', mt: 1 }}>
-                      <Typography>Warna</Typography>
-                      <Box>
-                        <FormControl fullWidth>
-                          <InputLabel id="demo-simple-select-label"></InputLabel>
-                          <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={warna}
-                            label="Warna"
-                            onChange={handleChange}
-                          >
-                            <MenuItem value={'abuabu'}>Abu-Abu</MenuItem>
-                            <MenuItem value={'gold'}>Gold</MenuItem>
-                          </Select>
-                        </FormControl>
-                      </Box>
-                    </Box>
-                  </Box>
-
-                  <Box sx={{ height: '33%', mt: 2 }}>
-                    <Typography>Ukuran</Typography>
-                    <Box
-                      sx={{
-                        height: 50,
-                        width: '60%',
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'space-between',
-                      }}
-                    >
+                        </Button>
+                      </Link>
                       <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
+                        sx={{
+                          height: 50,
+                          border: 1,
+                          borderColor: 'orange',
+                          width: 50,
+                          borderRadius: 1,
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                        }}
                       >
-                        <Typography sx={{ color: 'orange' }}>S</Typography>
+                        <Checkbox
+                          {...label}
+                          icon={<FavIcon sx={{ color: 'gray' }} />}
+                          checkedIcon={<FavIconFill sx={{ color: 'red' }} />}
+                        />
                       </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>M</Typography>
-                      </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>L</Typography>
-                      </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>2L</Typography>
-                      </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>3L</Typography>
-                      </Button>
-                      <Button
-                        sx={{ width: 25, border: 1, borderColor: 'orange' }}
-                      >
-                        <Typography sx={{ color: 'orange' }}>XL</Typography>
-                      </Button>
-                    </Box>
-                  </Box>
-
-                  <Box
-                    sx={{
-                      height: '33%',
-                      display: 'flex',
-                      flexDirection: 'row',
-                      mt: 2,
-                    }}
-                  >
-                    <Link to="/cart-page">
                       <Button
                         variant="outlined"
                         sx={{
@@ -1134,59 +849,18 @@ function DetailProduk() {
                           fontWeight: 'bold',
                           borderColor: 'orange',
                           height: 50,
+                          width: 150,
                           textTransform: 'capitalize',
-                          mr: 5,
                         }}
                       >
-                        <CartIcon />
-                        <Typography
-                          sx={{
-                            ml: 1,
-                            fontWeight: 'bold',
-                          }}
-                        >
-                          Tambah Keranjang
-                        </Typography>
+                        Beli
                       </Button>
-                    </Link>
-                    <Button
-                      sx={{
-                        height: 50,
-                        border: 1,
-                        borderColor: 'orange',
-                        width: 50,
-                        borderRadius: 1,
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        mr: 5,
-                      }}
-                    >
-                      <Checkbox
-                        {...label}
-                        icon={<FavIcon sx={{ color: 'gray' }} />}
-                        checkedIcon={<FavIconFill sx={{ color: 'red' }} />}
-                      />
-                    </Button>
-                    <Button
-                      variant="outlined"
-                      sx={{
-                        backgroundColor: 'orange',
-                        color: 'white',
-                        fontWeight: 'bold',
-                        borderColor: 'orange',
-                        height: 50,
-                        width: 150,
-                        textTransform: 'capitalize',
-                      }}
-                    >
-                      Beli
-                    </Button>
+                    </Box>
                   </Box>
                 </Box>
-              </Box>
-            </Box>
-          </Muncul>
+              </Grid>
+            </Grid>
+          </Box>
         </Box>
       </Container>
 
