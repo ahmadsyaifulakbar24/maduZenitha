@@ -233,9 +233,9 @@ function Body() {
           image="/assets/images/banner.jpg"
           alt="home banner"
           sx={{
-            paddingTop: 15,
+            paddingTop: 14,
             [theme.breakpoints.down('md')]: {
-              paddingTop: 13,
+              paddingTop: 9,
             },
           }}
         />
