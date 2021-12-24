@@ -153,63 +153,47 @@ const ProdukItem = () => {
           Rp.188.300
         </Typography>
 
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'row',
-            height: 40,
-            alignItems: 'center',
-            mt: 2,
-          }}
-        >
-          <Button
-            variant="outlined"
-            sx={{
-              backgroundColor: 'white',
-              color: 'black',
-              fontWeight: 'bold',
-              borderColor: 'orange',
-              mr: 3,
-              [theme.breakpoints.down('md')]: {
+        <Grid container spacing={3} sx={{ mt: 1 }}>
+          <Grid item xs={6} md={4}>
+            <Button
+              variant="outlined"
+              sx={{
                 backgroundColor: 'white',
                 color: 'black',
                 fontWeight: 'bold',
                 borderColor: 'orange',
-                height: 50,
-                width: 100,
-                mr: 3,
-              },
-            }}
-          >
-            <CartIcon sx={{ color: 'orange' }} />
-          </Button>
-          <Link to="/detail-produk" style={{ textDecoration: 'none' }}>
-            <Button
-              variant="outlined"
-              sx={{
-                backgroundColor: 'orange',
-                color: 'white',
-                fontWeight: 'bold',
-                borderColor: 'orange',
-                flexDirection: 'column-reverse',
-                textTransform: 'capitalize',
-                width: 150,
-                [theme.breakpoints.down('md')]: {
+              }}
+            >
+              <CartIcon sx={{ color: 'orange' }} />
+            </Button>
+          </Grid>
+          <Grid item xs={6} md={8}>
+            <Link to="/detail-produk" style={{ textDecoration: 'none' }}>
+              <Button
+                fullWidth
+                variant="outlined"
+                sx={{
                   backgroundColor: 'orange',
                   color: 'white',
                   fontWeight: 'bold',
                   borderColor: 'orange',
                   flexDirection: 'column-reverse',
                   textTransform: 'capitalize',
-                  height: 50,
-                  width: 250,
-                },
-              }}
-            >
-              Beli
-            </Button>
-          </Link>
-        </Box>
+                  [theme.breakpoints.down('md')]: {
+                    backgroundColor: 'orange',
+                    color: 'white',
+                    fontWeight: 'bold',
+                    borderColor: 'orange',
+                    flexDirection: 'column-reverse',
+                    textTransform: 'capitalize',
+                  },
+                }}
+              >
+                Beli
+              </Button>
+            </Link>
+          </Grid>
+        </Grid>
       </CardContent>
     </Card>
   );
@@ -908,7 +892,7 @@ function Body() {
             borderColor: 'black',
             textTransform: 'capitalize',
             alignSelf: 'center',
-            mt: 50,
+            mt: 60,
             mb: 10,
             width: 300,
             height: 50,
@@ -920,7 +904,7 @@ function Body() {
               borderColor: 'black',
               textTransform: 'capitalize',
               alignSelf: 'center',
-              mt: 200,
+              mt: 205,
               mb: 10,
               width: 300,
               height: 50,
@@ -984,6 +968,7 @@ function Body() {
             height: 400,
             display: 'flex',
             flexDirection: 'row',
+            my: 5,
             [theme.breakpoints.down('md')]: {
               height: 400,
               width: 900,
