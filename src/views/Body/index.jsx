@@ -453,14 +453,14 @@ function Body() {
                   <div>
                     <Box
                       sx={{
-                        width: '90%',
-                        height: 400,
-                        ml: 2,
+                        width: '60%',
+                        // height: 400,
+                        ml: 15,
                       }}
                     >
                       <CardMedia
                         component="img"
-                        height="50%"
+                        // height="50%"
                         image="/assets/images/image 8.png"
                         sx={{ borderTopLeftRadius: 5, borderTopRightRadius: 5 }}
                       />
@@ -548,14 +548,14 @@ function Body() {
                   <div>
                     <Box
                       sx={{
-                        width: '90%',
-                        height: 400,
-                        ml: 2,
+                        width: '60%',
+                        // height: 400,
+                        ml: 12,
                       }}
                     >
                       <CardMedia
                         component="img"
-                        height="50%"
+                        // height="50%"
                         image="/assets/images/image 16.png"
                         sx={{ borderTopLeftRadius: 5, borderTopRightRadius: 5 }}
                       />
@@ -643,14 +643,14 @@ function Body() {
                   <div>
                     <Box
                       sx={{
-                        width: '90%',
-                        height: 400,
-                        ml: 2,
+                        width: '60%',
+                        // height: 400,
+                        ml: 10,
                       }}
                     >
                       <CardMedia
                         component="img"
-                        height="50%"
+                        // height="50%"
                         image="/assets/images/image 12.png"
                         sx={{ borderTopLeftRadius: 5, borderTopRightRadius: 5 }}
                       />
@@ -738,14 +738,14 @@ function Body() {
                   <div>
                     <Box
                       sx={{
-                        width: '90%',
-                        height: 400,
-                        ml: 2,
+                        width: '60%',
+                        // height: 400,
+                        // ml: 2,
                       }}
                     >
                       <CardMedia
                         component="img"
-                        height="50%"
+                        // height="50%"
                         image="/assets/images/image 13.png"
                         sx={{ borderTopLeftRadius: 5, borderTopRightRadius: 5 }}
                       />
